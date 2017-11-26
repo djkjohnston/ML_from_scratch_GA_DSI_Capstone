@@ -22,24 +22,40 @@ Each class should have the following capabilities:
 	
 Status:
 
-* LinearRegression 
+* **LinearRegression**
 	* First draft completed, 11/25/2017
 	* Used Boston dataset for comparison
-	* Accuracy scores are analagous when compared to sklearn:
+	* R2 scores are analagous when compared to sklearn:
 		* From Scratch: 0.740607742865
 		* Sklearn: 0.740607742865
 	* From scratch appears to be quicker, but that may not prove true at scale
 		* From Scratch: 153 µs ± 30.5 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 		* Sklearn: 438 µs ± 9.06 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
-* LogisticRegression
-	* Something is wrong; all predicted values are either `inf` or `-inf`
-* KNeighborsRegressor
+* **LogisticRegression**
+	* First draft completed, 11/26/2017
+	* Used Breast Cancer dataset for comparison
+	* Accuracy scores are analagous when compared to sklearn:
+		* From Scratch: 0.954305799649
+		* Sklearn: 0.959578207381
+	* From scratch appears to be quicker, but that may not prove true at scale
+		* From Scratch: 620 µs ± 31 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+		* Sklearn: 7.52 ms ± 313 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+	* Set up for binary classification only right now. Also need to figure out how to return probabilities?
+* **KNeighborsRegressor**
 	* First draft completed 11/25/2017
 	* Used Boston dataset for comparison	
-	* Accuracy scores are identical when compared to sklearn:
+	* R2 scores are identical when compared to sklearn:
 		* From Scratch: 0.639665439953224
 		* Sklearn: 0.639665439953224
 	* From scratch appears to be much slower, but hope to change with further revisions
 		* From Scratch: 411 ms ± 9.18 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 		* Sklearn: 969 µs ± 29.6 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
-	
+* **KNeighborsClassifier**
+	* First draft completed 11/26/2017
+	* Used Breast Canser  dataset for comparison
+	* Accuracy scores are identical when compared to sklearn:
+		* From Scratch: 0.965034965034965
+		* Sklearn: 0.965034965034965
+	* From scratch appears to be much slower, but hope to change with further revisions
+		* From Scratch: 506 ms ± 14.6 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+		* Sklearn: 1.21 ms ± 47 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
