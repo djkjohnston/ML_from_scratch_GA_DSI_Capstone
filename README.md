@@ -49,6 +49,7 @@ Status:
 		* Sklearn: 0.639665439953224
 	* From scratch appears to be much slower, but hope to change with further revisions
 		* From Scratch: 411 ms ± 9.18 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+			* Update 11/27/2017: updated distance function resulting in a shorter run time: 6.86 ms ± 152 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
 		* Sklearn: 969 µs ± 29.6 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 * **KNeighborsClassifier**
 	* First draft completed 11/26/2017
@@ -58,4 +59,5 @@ Status:
 		* Sklearn: 0.965034965034965
 	* From scratch appears to be much slower, but hope to change with further revisions
 		* From Scratch: 506 ms ± 14.6 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+			* Update 11/27/2017: updated distance function resulting in a shorter run time: 8.38 ms ± 274 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
 		* Sklearn: 1.21 ms ± 47 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
