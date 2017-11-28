@@ -35,11 +35,12 @@ Status:
 	* First draft completed, 11/26/2017
 	* Used Breast Cancer dataset for comparison
 	* Accuracy scores are analagous when compared to sklearn:
-		* From Scratch: 0.954305799649
-		* Sklearn: 0.959578207381
+		* From Scratch: 0.965034965035
+		* Sklearn: 0.979020979021
 	* From scratch appears to be quicker, but that may not prove true at scale
-		* From Scratch: 620 µs ± 31 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
-		* Sklearn: 7.52 ms ± 313 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+		* From Scratch: 
+563 µs ± 55.9 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+		* Sklearn: 3.52 ms ± 86.3 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
 	* Set up for binary classification only right now. Also need to figure out how to return probabilities?
 * **KNeighborsRegressor**
 	* First draft completed 11/25/2017
