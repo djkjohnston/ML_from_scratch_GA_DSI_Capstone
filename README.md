@@ -62,3 +62,15 @@ Status:
 		* From Scratch: 506 ms ± 14.6 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 			* Update 11/27/2017: updated distance function resulting in a shorter run time: 5.83 ms ± 68.2 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
 		* Sklearn: 1.21 ms ± 47 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+* **KMeans**
+	* First draft completed 11/29/2017
+	* used `sklearn.datasets.make_blobs` for comparison
+		* `make_blobs(n_samples=10000, n_features=12, centers=5, random_state=42)`
+	* Runtime:
+		* From Scratch: 328 ms ± 24.9 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+		* Sklearn: 64.4 ms ± 1.66 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+	* Cluster: Taking this with a grain of salt since KMeans performance depends so much on the starting points used
+		* From Scratch: <img src='/Users/djohnston/dsi_plus/dsi_capstone_ml_from_scratch/assets/from_scratch_kmeans_blobs_pairplot.png'>
+		* Sklearn: <img src='/Users/djohnston/dsi_plus/dsi_capstone_ml_from_scratch/assets/sklearn_kmeans_blobs_pairplot.png'>
+		
+	
