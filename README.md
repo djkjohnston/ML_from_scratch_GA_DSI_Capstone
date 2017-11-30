@@ -70,7 +70,7 @@ Status:
 		* From Scratch: 328 ms ± 24.9 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 		* Sklearn: 64.4 ms ± 1.66 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
 	* Cluster: Taking this with a grain of salt since KMeans performance depends so much on the starting points used
-		* From Scratch: <img src='/Users/djohnston/dsi_plus/dsi_capstone_ml_from_scratch/assets/from_scratch_kmeans_blobs_pairplot.png'>
-		* Sklearn: <img src='/Users/djohnston/dsi_plus/dsi_capstone_ml_from_scratch/assets/sklearn_kmeans_blobs_pairplot.png'>
+		* From Scratch: <img src='https://git.generalassemb.ly/raw/dannyboyjohnston/dsi_capstone_ml_from_scratch/master/assets/from_scratch_kmeans_blobs_pairplot.png'>
+		* Sklearn: <img src='https://git.generalassemb.ly/raw/dannyboyjohnston/dsi_capstone_ml_from_scratch/master/assets/sklearn_kmeans_blobs_pairplot.png'>
 		
 	
