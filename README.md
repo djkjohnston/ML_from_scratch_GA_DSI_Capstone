@@ -87,7 +87,15 @@ Status:
 		* Sklearn: 
 		
 		<img src='https://git.generalassemb.ly/raw/dannyboyjohnston/dsi_capstone_ml_from_scratch/master/assets/from_scratch_dbscan.png'>
+	* Notes:
+		* From Scratch implimentation 'grows' out from all custered points with a distance of `r`. Typical visualizations show DBScan adding new point from one observation at a time.
 
-		
-		
-	
+* **Hierarchical Clustering**
+	* First draft completed 12/4/2017
+	* Algorithm uses the bottom up approach. I am using Sklearn's AgglomerativeClustering for comparison.
+	* Used dummy data created by `make_blobs(n_samples=10, n_features=2, centers=5, random_state=42)` for testing and comparison
+	* Runtime:
+		* From Scratch: 220 µs ± 9.47 µs per loop
+		* Sklearn: 148 µs ± 3.74 µs per loop 
+	* Notes:
+		* From Scratch does not scale well. I expect the use of `np.where` is a bottleneck.
