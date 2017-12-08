@@ -60,6 +60,10 @@ In Classification applications, the outcomes of the identified $$K$$ neighbors a
 		* Count of $$True$$ = 2
 		* Count of $$False$$ = 3
 		* $$3 > 2$$ therefor $$\widehat{y}_{n} = False$$
+		
+#### Visualization
+
+![K Nearest Neighbors Visualization]()
 
 #### Testing and Performance
 * Regression: 
