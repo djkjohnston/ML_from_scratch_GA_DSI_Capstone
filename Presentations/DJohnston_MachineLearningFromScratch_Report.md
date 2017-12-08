@@ -1,9 +1,9 @@
----
-title: Capstone: Machine Learning From Scratch
+**Capstone: Machine Learning From Scratch**
 
-author: Daniel Johnston
+**Daniel Johnston**
 
-date: December 7, 2017
+**December 7, 2017**
+
 ---
 
 # Project Description
@@ -145,13 +145,13 @@ DB Scan is a clustering algorithm which identifies observations that a clustered
 	<img src='https://git.generalassemb.ly/raw/dannyboyjohnston/dsi_capstone_ml_from_scratch/master/assets/from_scratch_dbscan.png'>
 		
 #### Critique
-My understanding is that typical implimentations of DB Scan scan for new observations iteratively, i.e. the cluster grows point by point. My implimentation, on the other hand, grows outward in waves, i.e. the outer boundry is expanded by $$r$$ consitenly until it reaches the bounds of the cluster. 
+My understanding is that typical implementations of DB Scan scan for new observations iteratively, i.e. the cluster grows point by point. My implementation, on the other hand, grows outward in waves, i.e. the outer boundary is expanded by $$r$$ consistently until it reaches the bounds of the cluster. 
 
-One source of inefficiency with my implimentation is that there are redundant calculations being performed. Further development would work to address this, and possibly change the algorithm to match the point-to-point cluster growth described above. I also use a recursive function to build the clusters which might be less efficient than alternative approaches.
+One source of inefficiency with my implementation is that there are redundant calculations being performed. Further development would work to address this, and possibly change the algorithm to match the point-to-point cluster growth described above. I also use a recursive function to build the clusters which might be less efficient than alternative approaches.
 
 ## Bottom Up Hierarchical Clustering
 #### Model Description
-Bottom Up Hierarchical Clustering starts by assigning every case in $$X$$ to a separate cluster. Clusters are then joined iteratively, starting with the clusters that are closest together, according to some distance metric, and ending with the clusters that are fartherest apart. The algorithm will eventually end with a single cluster containing all cases of $$X$$. The advantage to this approach is realized when you look at the history of how the clusters are joined. This enables the user to identify clusters at any step of the process and choose the ones that are of the most value. A Hierarchal Clustering is that it does not scale well; every case added to $$X$$ adds a considerable runtime.
+Bottom Up Hierarchical Clustering starts by assigning every case in $$X$$ to a separate cluster. Clusters are then joined iteratively, starting with the clusters that are closest together, according to some distance metric, and ending with the clusters that are farthest apart. The algorithm will eventually end with a single cluster containing all cases of $$X$$. The advantage to this approach is realized when you look at the history of how the clusters are joined. This enables the user to identify clusters at any step of the process and choose the ones that are of the most value. A Hierarchal Clustering is that it does not scale well; every case added to $$X$$ adds a considerable runtime.
 
 #### Pseudo Code
 1. Assign all cases of $$X$$ to their own cluster
@@ -171,6 +171,6 @@ Bottom Up Hierarchical Clustering starts by assigning every case in $$X$$ to a s
 
 #### Critique
 
-As seen above, my implimentation does not scale well at all. This is because I create a queue of case-pairs using `itertools` that are then ordered base on the distance measurement. In general working with `numpy` means working without persistant indices. It has been a challenge to work around this limitation but still identify the proper cases to group.
+As seen above, my implementation does not scale well at all. This is because I create a queue of case-pairs using `itertools` that are then ordered base on the distance measurement. In general working with `numpy` means working without persistent indices. It has been a challenge to work around this limitation but still identify the proper cases to group.
 
-Future development efforts would seek to address this scalability issue. I am unsure of the best solution, but it would likely exclude the use of `itertools`. I'd also like to explore how to convert the cluster history into a dendrogram, which is a visualization to show the itterative clustering.
+Future development efforts would seek to address this scalability issue. I am unsure of the best solution, but it would likely exclude the use of `itertools`. I'd also like to explore how to convert the cluster history into a dendrogram, which is a visualization to show the iterative clustering.
