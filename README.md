@@ -96,7 +96,7 @@ Status:
 		* second implimentation is slower with small samples but is much faster at scale compared to initial implimentation:
 			* uses a boolean array to manage which cases are within a working cluster
 			* scans from point to point, using a queue to manage which points need to be scanned.
-	* Runtime: Sklearn is nearly 10x faster
+	* Runtime: Sklearn is still faster
 		* `make_moons(n_samples=1000, random_state=42)`
 			* From Scratch mk1: 33.8 ms ± 1.21 ms per loop
 			* From Scratch mk2: 45.3 ms ± 3.84 ms per loop
