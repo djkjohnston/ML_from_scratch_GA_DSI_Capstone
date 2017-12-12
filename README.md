@@ -89,6 +89,23 @@ Status:
 		<img src='https://git.generalassemb.ly/raw/dannyboyjohnston/dsi_capstone_ml_from_scratch/master/assets/from_scratch_dbscan.png'>
 	* Notes:
 		* From Scratch implimentation 'grows' out from all custered points with a distance of `r`. Typical visualizations show DBScan adding new point from one observation at a time.
+		
+* **DBScan, second implimentation**
+	* First draft completed 12/11/2017
+		* used `sklearn.datasets.make_moons` for comparison
+		* second implimentation is slower with small samples but is much faster at scale compared to initial implimentation:
+			* uses a boolean array to manage which cases are within a working cluster
+			* scans from point to point, using a queue to manage which points need to be scanned.
+	* Runtime: Sklearn is nearly 10x faster
+		* `make_moons(n_samples=1000, random_state=42)`
+			* From Scratch mk1: 33.8 ms ± 1.21 ms per loop
+			* From Scratch mk2: 45.3 ms ± 3.84 ms per loop
+			* Sklearn: 8.07 ms ± 204 µs per loop
+		* `make_moons(n_samples=10000, random_state=42)`
+			* From Scratch mk1: 39.8 s ± 11 s per loop
+			* From Scratch mk2: 2.87 s ± 275 ms per loop
+			* Sklearn: 722 ms ± 40.6 ms per loop
+	* Clusters are identical
 
 * **Hierarchical Clustering**
 	* First draft completed 12/4/2017
