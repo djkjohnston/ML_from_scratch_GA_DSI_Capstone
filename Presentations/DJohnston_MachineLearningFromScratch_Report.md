@@ -130,7 +130,7 @@ What is interesting about KMeans is that the results are largely reliant on the 
 
 My implementation of K-Mean currently does not have a end condition beyond reaching a user-provided number of iterations. I make use of the `cdist` function to calculate the distance between the centroids and the observations of $X$. `cdist` works really well for this scenario because it takes in any number of centroids, so it scales well for any giving scenario. 
 
-My implementation also only supports random assignment of the starting centroids, based on the uniform random distribution. This can results in starting centroids that will have no observations of $X$ assigned. During the implementation of the visualization piece, I fount that this can result in a bug where all points collapse into a single cluster. As a stopgap measure, centroids with no closest points are not moved, which results in fewer clusters than $k$.
+My implementation also only supports random assignment of the starting centroids, based on the uniform random distribution. This can results in starting centroids that will have no observations of $X$ assigned. During the implementation of the visualization piece, I found that this can result in a bug where all points collapse into a single cluster. As a stopgap measure, centroids with no closest points are not moved, which results in fewer clusters than $k$.
 
 Further development would include investigation of different approaches to generating the starting centroids (different random distributions, logical controls, manual definition, etc.)
 
