@@ -152,7 +152,7 @@ DB Scan is a clustering algorithm which identifies observations that a clustered
 
 #### Visualizing DBScan
 
-![DBScan visualiation](https://git.generalassemb.ly/raw/dannyboyjohnston/dsi_capstone_ml_from_scratch/master/for_visualizations/assets/plots_for_gifs/dbscan2/dbscan2.gif)
+![DBScan visualiation](https://raw.githubusercontent.com/djkjohnston/ML_from_scratch_GA_DSI_Capstone/master/for_visualizations/assets/plots_for_gifs/dbscan2/dbscan2.gif)
 
 		
 #### Critique
