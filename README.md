@@ -61,7 +61,7 @@ In Classification applications, the outcomes of the identified $K$ neighbors are
 		
 #### Visualization for k = 5
 
-![K Nearest Neighbors Visualization](https://git.generalassemb.ly/raw/dannyboyjohnston/dsi_capstone_ml_from_scratch/master/for_visualizations/assets/plots_for_gifs/kneighbors/kneighbors.gif)
+![K Nearest Neighbors Visualization](https://raw.githubusercontent.com/djkjohnston/ML_from_scratch_GA_DSI_Capstone/master/for_visualizations/assets/plots_for_gifs/kneighbors/kneighbors.gif)
 
 #### Testing and Performance
 * Regression: 
